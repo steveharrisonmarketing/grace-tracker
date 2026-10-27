@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Grace's Habits</title>
+  <meta name="description" content="Grace's daily habit tracker">
+  <meta name="theme-color" content="#ffe4ee">
+
+  <!-- Home Screen app (iPhone / iPad) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Habits">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="main" class="app"></main>
+
+  <!-- Bottom tab bar -->
+  <nav class="tabbar" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" data-tab="today"><span aria-hidden="true">🌸</span>Today</button>
+    <button class="tab" role="tab" data-tab="progress"><span aria-hidden="true">📈</span>Progress</button>
+    <button class="tab" role="tab" data-tab="settings"><span aria-hidden="true">⚙️</span>Settings</button>
+  </nav>
+
+  <div id="fx" class="fx" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p class="app">Please turn on JavaScript to use the habit tracker.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
